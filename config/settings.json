@@ -1,0 +1,12 @@
+{
+  "title": "dannawara.com"
+, "greeting": "Hello, My name is Dan Nawara, from dannawara.com"
+, "footerLinks": [
+    { "name": "twitter"
+    , "url": "http://www.twitter.com/dnawara"
+    , "description": "You know what twitter is." }
+  , { "name": "socialbite"
+    , "url": "http://www.socialbite.com"
+    , "description": "Food blog" }
+]
+}

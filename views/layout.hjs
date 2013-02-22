@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="grid">
+      <header class='row'>
+        {{>header/menu}}
+      </header>
+      <section class='row'>
+        <div class="sixteen">
+          <h1>Hello, my name is Dan Nawara</h1>
+        </div>
+        {{>content}}
+      </section>
+      <footer class='row'>
+        {{>footer}}
+      </footer>
+    </div>
+  </body>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+  <script src="http://twitter.github.com/hogan.js/builds/2.0.0/hogan-2.0.0.js"></script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="http://backbonejs.org/backbone.js"></script>
+  {{{script}}}
+</html>
+</form>

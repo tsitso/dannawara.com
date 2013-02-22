@@ -1,0 +1,93 @@
+gradient(start,end)
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top, start 0%, end 100%)
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, start 0%, end 100%)
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, start 0%, end 100%)
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, start), color-stop(1, end))
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, start 0%, end 100%)
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom, start 0%, end 100%)
+body
+  table
+    set-baseline(16px)
+    border: 1px solid form-border
+    margin-bottom: (baseline/2)
+    tr
+      td,
+      th
+        border: 1px solid form-border
+        set-baseline(16px)
+        padding: ((baseline/4) - 1) ((baseline/2) - 1) (baseline/4)
+        background: #fff
+      th
+        background: #F9F9F9
+        text-shadow: -1px -1px 3px #EEE
+      &:last-child
+        th
+          padding: ((baseline/4) - 1) ((baseline/2) - 1)
+      &:nth-child(odd)
+        td
+          background: #F9F9F9
+  ul
+    clear: both
+  ol.fancy,
+  ul.fancy
+    margin: 0
+    padding: 0
+    li
+      set-baseline(16px)
+      list-style: none
+    li:before
+      display: marker
+      content: '☛'
+      margin: 0 (baseline/4)
+      color: #666
+      text-shadow: -1px -1px 3px #EEE
+  ol.fancy
+    counter-reset: list
+    li:before
+      counter-increment: list
+      content: counter(list)'. '
+      font-style: italic
+  dl
+    *zoom: 1
+    clear: both
+    dt,
+    dd
+      border-radius: 3px
+      padding: (baseline/4)
+      display: block
+      float: left
+      box-shadow: 0px 2px 2px 1px rgba(51,51,51,.3);
+    dt
+      clear: left
+      border: 1px solid form-border
+      border-right: 0 form-border
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+      background: #CCC
+      gradient(#EFEFEF,#DDD)
+      font-weight: bold
+    dd
+      border: 1px solid form-border
+      border-left: 0 none
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+      clear: right
+      gradient(#FFF,#EEE)
+    &:before,
+    &:after
+      content: " "
+      display: table
+    &.after
+      clear: both
+

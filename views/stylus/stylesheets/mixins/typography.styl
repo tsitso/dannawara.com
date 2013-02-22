@@ -1,0 +1,36 @@
+set-baseline(font-size=1.4em)
+  margin: 0 0 baseline
+  font-size: font-size
+  padding: 0
+  line-height: ciel(((font-size) / baseline ))
+  text-shadow: -1px -1px #fff;
+
+
+body
+  font-family: font-family
+  font-weight: 300
+  color: text-color
+  set-baseline(1em)
+
+*
+  set-baseline(1rem)
+
+h1
+  set-baseline(3rem)
+h2
+  set-baseline(2.8rem)
+h3
+  set-baseline(2.6rem)
+h4
+  set-baseline(2.4rem)
+h5
+  set-baseline(2rem)
+article
+  set-baseline(1em)
+
+p
+  color: darken(text-color, 20%)
+
+li
+  list-style-position: inside
+

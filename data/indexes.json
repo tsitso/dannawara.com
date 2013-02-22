@@ -1,0 +1,6 @@
+{ "v" : 1, "key" : { "_id" : 1 }, "ns" : "dannawara.sessions", "name" : "_id_" }
+{ "v" : 1, "key" : { "_id" : 1 }, "ns" : "dannawara.users", "name" : "_id_" }
+{ "v" : 1, "key" : { "_id" : 1 }, "ns" : "dannawara.modules", "name" : "_id_" }
+{ "v" : 1, "key" : { "_id" : 1 }, "ns" : "dannawara.cards", "name" : "_id_" }
+{ "v" : 1, "key" : { "name" : 1 }, "unique" : true, "ns" : "dannawara.cards", "name" : "name_1", "background" : true, "safe" : null }
+{ "v" : 1, "key" : { "expires" : 1 }, "ns" : "dannawara.sessions", "name" : "expires_1", "expireAfterSeconds" : 0 }

@@ -1,0 +1,24 @@
+{
+  "name": "ABCtesting",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  , "test": "make test"
+  },
+  "dependencies": {
+    "express": "3.0.6"
+  , "everyauth": "*"
+  , "h4e": "*"
+  , "connect-mongo": "*"
+  , "mongoose": "*"
+  , "stylus": "*"
+  , "sockjs": "*"
+  , "marked": "*"
+  , "mocha": "*"
+  , "mocha-phantomjs": "*"
+  , "nib": "*"
+  , "supertest": "*"
+  , "should": "*"
+  }
+}

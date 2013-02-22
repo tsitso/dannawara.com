@@ -1,0 +1,25 @@
+{{#test}}
+  <h1>{{name}}</h1>
+  <dl>
+    <dt>buckets</dt><dd>{{buckets}}</dd>
+    <dt>layer</dt><dd>{{layer}}</dd>
+    <dt>status</dt><dd>{{current_status}}</dd>
+  </dl>
+  <h2>Variants</h2>
+  <ul>
+    {{#variants}}
+      <li>
+        <h3>{{name}}</h3>
+        <code>
+          {{template}}
+        </code>
+      </li>
+    {{/variants}}
+  </ul>
+{{/test}}
+<script>
+  metrics = {{{metrics}}};
+  users = {{{users}}};
+</script>
+<script type='text/javascript' src='/javascripts/metrics.js'></script>
+<script type='text/javascript' src='/javascripts/backbone/tests/routers/show.js'></script>

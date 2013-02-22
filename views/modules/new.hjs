@@ -1,0 +1,20 @@
+<form action="/modules{{#module}}/update{{/module}}" method="post" id="test">
+  <fieldset>
+    <div>
+      <label for="name">Name</label>
+      <input name="name" id="name" value="{{module.name}}" />
+      {{#module}}
+        <input type="hidden" name="id" value="{{id}}" />
+      {{/module}}
+    </div>
+    <div class="text">
+      <label>Content</label>
+      <textarea name="content" id="content">{{module.content}}</textarea>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="submit">
+      <input type="submit" class="button" id="submit" />
+    </div>
+  </fieldset>
+</form>

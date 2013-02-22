@@ -1,0 +1,15 @@
+{{#user}}
+  <a href="/cards/edit/{{card.name}}">Edit</a>
+{{/user}}
+{{#card}}
+<article class="sixteen">
+  {{{content}}}
+  <ul class="modules">
+    {{#modules}}
+      <li>
+        {{{content}}}
+      </li>
+    {{/modules}}
+  </ul>
+</article>
+{{/card}}

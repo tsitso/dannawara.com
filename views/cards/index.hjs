@@ -1,0 +1,7 @@
+<ul>
+{{#cards}}
+  <li>
+    {{name}} <a href="/cards/edit/{{name}}">edit</a> <a href="/cards/{{name}}">view</a>
+  </li>
+{{/cards}}
+</ul>

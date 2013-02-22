@@ -1,0 +1,23 @@
+<h1>{{user.name}}</h1>
+<menu id="social">
+{{#user.googleId}}
+  <li>connected with google.</li>
+{{/user.googleId}}
+{{^user.googleId}}
+  <li><a href='/auth/google'>add a google id.</a></li>
+{{/user.googleId}}
+{{#user.githubId}}
+  <li>connected with github.</li>
+{{/user.githubId}}
+{{^user.githubId}}
+  <li><a href='/auth/github'>add a github id.</a></li>
+{{/user.githubId}}
+<h2>Groups</hd>
+</menu>
+<ul id="groups">
+{{#user.groups}}
+  <li>{{name}}</li>
+{{/user.groups}}
+  <li>add a group</li>
+  <li>join a group</li>
+</ul>
