@@ -1,5 +1,5 @@
 {
-  "name": "ABCtesting",
+  "name": "DanNawara",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,13 +10,11 @@
     "express": "3.0.6"
   , "everyauth": "*"
   , "h4e": "*"
-  , "connect-mongo": "*"
   , "mongoose": "*"
   , "stylus": "*"
   , "sockjs": "*"
   , "marked": "*"
   , "mocha": "*"
-  , "mocha-phantomjs": "*"
   , "nib": "*"
   , "supertest": "*"
   , "should": "*"
