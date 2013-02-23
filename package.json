@@ -1,6 +1,6 @@
 {
   "name": "DanNawara",
-  "version": "0.0.1-5",
+  "version": "0.0.1-6",
   "private": true,
   "scripts": {
     "start": "node app.js",
@@ -19,6 +19,10 @@
     "supertest": "*",
     "should": "*"
   },
+  "domains": [
+    "dannawara.com"
+    ,"www.dannawara.com"
+    ],
   "engines": {
     "node": "0.8.x"
   },
