@@ -54,7 +54,6 @@ var TestForm = Backbone.View.extend({
     var self = this;
     this.layers = new Layers();
     this.layers.fetch({success: function(){
-      console.log('fetched');
       $.ajax('/template',{
         type: 'POST'
       , data: {template: '/views/tests/new.hjs'}

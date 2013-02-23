@@ -3,7 +3,6 @@ var Card = require('../models/card.js')
 
 var parseModules = function(card, cb){
   card.modules.forEach(function(module,i){
-    console.log(module);
     card.modules[i].content = md(module.content)
   })
   cb(card)

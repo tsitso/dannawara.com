@@ -9,8 +9,6 @@ describe('User controller', function(){
       .get('/profiles/50ff0de1854a04bf68000002')
       .expect(500)
       .end(function(err, res){
-              console.dir(err)
-              console.dir(res)
                     done();
             });
   });
