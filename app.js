@@ -16,7 +16,7 @@ app.configure('production', function(){
 });
 
 app.configure('development', function(){
-  app.db = 'mongodb://localhost/dannawara'
+  app.db = 'mongodb://superman:flywithme@linus.mongohq.com:10002/pinmonkey'
 });
 mongoose.connect(app.db);
 
@@ -42,6 +42,7 @@ app.configure(function(){
       secret: 'egg mcMuffin'
     , store: new MongoStore({
         db: mongoose.connections[0].db
+      , url: app.db
       })
   }));
   app.use(everyauth.middleware(app));
