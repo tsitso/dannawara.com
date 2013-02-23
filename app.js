@@ -9,10 +9,17 @@ var express = require('express')
   , everyauth = require('everyauth')
   , path = require('path');
 
-
-mongoose.connect('mongodb://nodejitsu:3992a14d0986e9b6953a970a91b78ff9@linus.mongohq.com:10098/nodejitsudb2758812075');
-
 var app = express();
+
+app.configure('production', function(){
+  app.db = 'mongodb://nodejitsu:3992a14d0986e9b6953a970a91b78ff9@linus.mongohq.com:10098/nodejitsudb2758812075'
+});
+
+app.configure('development', function(){
+  app.db = 'mongodb://localhost/dannawara'
+});
+mongoose.connect(app.db);
+
 
 //Auth
 require('./lib/auth.js').init(everyauth);
