@@ -1,4 +1,5 @@
-var express = require('express')
+var everyauth = require('everyauth')
+  , express = require('express')
   , MongoStore = require('connect-mongo')(express) 
   , stylus = require('stylus')
   , nib = require('nib')
@@ -6,9 +7,9 @@ var express = require('express')
   , mongoose = require('mongoose')
   , h4e = require('h4e')
   , http = require('http')
-  , everyauth = require('everyauth')
   , path = require('path');
 
+auth = require('./lib/auth.js').init(everyauth);
 var app = express();
 
 app.configure('production', function(){
@@ -20,9 +21,7 @@ app.configure('development', function(){
 });
 mongoose.connect(app.db);
 
-
 //Auth
-require('./lib/auth.js').init(everyauth);
 
 h4e.setup({ 
     app: app 
@@ -51,10 +50,10 @@ app.configure(function(){
     src: __dirname + '/views/stylus'
   , dest: __dirname + '/public'
   , compile: function(str, path){
-      return stylus(str)
-        .set('filename', path)
-        .set('compress', true)
-        .use(nib());
+    return stylus(str)
+      .set('filename', path)
+      .set('compress', true)
+      .use(nib());
   }
   }));
   app.use(express.static(path.join(__dirname, 'public')));

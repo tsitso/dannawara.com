@@ -14,9 +14,11 @@ module.exports = {
       if(card && card.modules != null){
         parseModules(card,function(card){
           card.content = md(card.content)
+          console.log(req.user)
           res.render('layout',{
             values:{
-              card: card }
+              user: req.user
+            , card: card }
           , partials:{ 
               content: '{{>cards/show}}' }
           });
