@@ -17,7 +17,7 @@ module.exports = {
     });
   }
 , show: function(req,res){
-    Module.findOne({name: req.params.id},function(err, module){
+    Module.findOne({_id: req.params.id},function(err, module){
         res.render('layout',{
           values:{
             module: module }

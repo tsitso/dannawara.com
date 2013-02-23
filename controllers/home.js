@@ -16,8 +16,7 @@ module.exports = {
           card.content = md(card.content)
           res.render('layout',{
             values:{
-              user: req.user
-            , card: card }
+              card: card }
           , partials:{ 
               content: '{{>cards/show}}' }
           });

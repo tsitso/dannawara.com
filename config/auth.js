@@ -1,7 +1,7 @@
 module.exports = {
   github: {
-    appId: '1a1eaf50f47533d57c8d'
-  , appSecret: '718c0b8ed76484f88c365bb85f5a9ee3b7e286b6'
+    appId: '31966e3d14c60a442142'
+  , appSecret: 'fa2b0ef8667f1e65af96354e6779f12976d4ce7f'
   }
 , google: {
     appId: '742520875094.apps.googleusercontent.com'

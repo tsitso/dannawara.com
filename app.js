@@ -16,7 +16,7 @@ app.configure('production', function(){
 });
 
 app.configure('development', function(){
-  app.db = 'mongodb://superman:flywithme@linus.mongohq.com:10002/pinmonkey'
+  app.db = 'mongodb://localhost/dannawara'
 });
 mongoose.connect(app.db);
 

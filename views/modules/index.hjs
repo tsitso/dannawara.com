@@ -1,7 +1,7 @@
 <ul>
   {{#modules}}
     <li>
-      {{name}} <a href="/modules/edit/{{id}}">edit</a> <a href="/modules/destroy/{{id}}">destroy</a>
+      {{name}} <a href="/modules/edit/{{id}}">edit</a> <a href="/module/show/{{id}}">view</a> <a href="/modules/destroy/{{id}}">destroy</a>
     </li>
   {{/modules}}
 </ul>
