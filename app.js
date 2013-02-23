@@ -12,7 +12,7 @@ var express = require('express')
 var app = express();
 
 app.configure('production', function(){
-  app.db = 'mongodb://nodejitsu:3992a14d0986e9b6953a970a91b78ff9@linus.mongohq.com:10098/nodejitsudb2758812075'
+  app.db = 'mongodb://danboy:elsol100@linus.mongohq.com:10004/dannawara'
 });
 
 app.configure('development', function(){
