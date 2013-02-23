@@ -1,6 +1,6 @@
 {
   "name": "DanNawara",
-  "version": "0.0.1-6",
+  "version": "0.0.1-7",
   "private": true,
   "scripts": {
     "start": "node app.js",
@@ -10,6 +10,7 @@
     "express": "3.0.6",
     "everyauth": "*",
     "h4e": "*",
+    "connect-mongo": "*",
     "mongoose": "*",
     "stylus": "*",
     "sockjs": "*",
@@ -20,9 +21,9 @@
     "should": "*"
   },
   "domains": [
-    "dannawara.com"
-    ,"www.dannawara.com"
-    ],
+    "dannawara.com",
+    "www.dannawara.com"
+  ],
   "engines": {
     "node": "0.8.x"
   },

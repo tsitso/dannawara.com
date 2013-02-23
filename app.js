@@ -1,4 +1,5 @@
 var express = require('express')
+  , MongoStore = require('connect-mongo')(express) 
   , stylus = require('stylus')
   , nib = require('nib')
   , controllers = require('./lib/controllers.js')
@@ -32,6 +33,9 @@ app.configure(function(){
   app.use(express.cookieParser('Scattered Clouds'));
   app.use(express.session({
       secret: 'egg mcMuffin'
+    , store: new MongoStore({
+        db: mongoose.connections[0].db
+      })
   }));
   app.use(everyauth.middleware(app));
   app.use(app.router);
