@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path');
 
 
-mongoose.connect('mongodb://dnawara:elsol100@ds053597.mongolab.com:53597/heroku_app12238846');
+mongoose.connect('mongodb://nodejitsu:3992a14d0986e9b6953a970a91b78ff9@linus.mongohq.com:10098/nodejitsudb2758812075');
 
 var app = express();
 

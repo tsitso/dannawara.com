@@ -11,7 +11,8 @@ var parseModules = function(card, cb){
 module.exports = {
   index: function(req, res){
     Card.findOne({}, {}, { sort: { 'created_at' : -1 } }).populate('modules').exec(function(err, card){
-        var parsedCard = parseModules(card,function(card){
+      if(card && card.modules != null){
+        parseModules(card,function(card){
           card.content = md(card.content)
           res.render('layout',{
             values:{
@@ -21,6 +22,9 @@ module.exports = {
               content: '{{>cards/show}}' }
           });
         });
+      }else{
+        res.send('empty');
+      }
     });
   }
 }
